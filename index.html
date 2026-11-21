@@ -1,0 +1,1111 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oyekunmi Oyediji (O.Oye) — Product &amp; Brand Designer</title>
+    <meta
+      name="description"
+      content="Portfolio of Oyekunmi Oyediji (O.Oye), a Product and Brand Designer crafting calm, intelligent, and human experiences for startups and growing businesses."
+    />
+
+    <!-- Google Fonts: Geist & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Preload Critical Memoji Assets -->
+    <link rel="preload" href="assets/images/memoji_open.png" as="image" />
+    <link rel="preload" href="assets/images/memoji_close.png" as="image" />
+    <link rel="icon" type="image/png" href="assets/images/memoji_open.png" />
+    <link rel="apple-touch-icon" href="assets/images/memoji_open.png" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Site Header / Navigation -->
+    <header class="site-header" id="top" role="banner">
+      <div class="container header-container">
+        <!-- Wordmark with Continuous Diagonal Silver Shimmer Sweep -->
+        <a href="#" class="wordmark" aria-label="O.Oye - Home">O.Oye</a>
+
+        <!-- Desktop Center Pill Navigation -->
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+          <ul class="nav-pill">
+            <li><a href="#work" class="nav-link">Work</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li>
+              <a
+                href="assets/images/o_oye%20cv.pdf"
+                class="nav-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Read CV</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Desktop Right CTA Button -->
+        <a
+          href="#contact"
+          class="btn-talk"
+          aria-label="Let's talk and contact Oyekunmi"
+        >
+          <span>Let's talk</span>
+          <svg
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M13.5 4.5L4.5 13.5M13.5 12V4.5H6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Trigger Button -->
+        <button
+          type="button"
+          class="mobile-menu-btn"
+          id="mobileMenuBtn"
+          aria-label="Open Navigation Menu"
+          aria-expanded="false"
+          aria-controls="mobileNavModal"
+        >
+          Menu
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Fullscreen Navigation Modal (matches ref_mobile_nav.png) -->
+    <div
+      class="mobile-nav-overlay"
+      id="mobileNavModal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-label="Mobile Navigation"
+    >
+      <div class="mobile-nav-header">
+        <div class="availability-status">
+          <span class="availability-dot" aria-hidden="true"></span>
+          <span class="availability-text">Available for new projects</span>
+        </div>
+        <button
+          type="button"
+          class="mobile-close-btn"
+          id="mobileCloseBtn"
+          aria-label="Close Navigation Menu"
+        >
+          Close
+        </button>
+      </div>
+
+      <div class="mobile-nav-body">
+        <ul class="mobile-nav-list">
+          <li>
+            <a href="#work" class="mobile-nav-link">
+              <span class="mobile-nav-bullet" aria-hidden="true"></span>
+              <span>Work</span>
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="mobile-nav-link">
+              <span class="mobile-nav-bullet" aria-hidden="true"></span>
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="assets/images/o_oye%20cv.pdf"
+              class="mobile-nav-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="mobile-nav-bullet" aria-hidden="true"></span>
+              <span>Read CV</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mobile-nav-footer">
+        <img
+          src="assets/images/memoji_open.png"
+          alt="O.Oye Avatar"
+          class="mobile-nav-memoji"
+          width="36"
+          height="36"
+        />
+      </div>
+    </div>
+
+    <!-- Main Hero Section -->
+    <main id="main-content">
+      <section class="hero-section" id="hero" aria-label="Hero Section">
+        <div class="container hero-container">
+          <!-- Intro Line: Meet O.Oye! with Interactive O.O Theme Toggle Switch -->
+          <div class="mobile-hero-availability-col">
+            <div class="availability-status">
+              <span class="availability-dot" aria-hidden="true"></span>
+              <span class="availability-text">Available for new projects</span>
+            </div>
+          </div>
+          <div class="hero-intro">
+            <span class="hero-intro-text">Meet&nbsp;</span>
+            <button
+              type="button"
+              class="theme-toggle-switch"
+              id="themeToggle"
+              role="switch"
+              aria-checked="false"
+              aria-label="Switch to Light Mode"
+            >
+              <span
+                class="theme-toggle-hint"
+                id="themeToggleHint"
+                aria-hidden="true"
+              ></span>
+              <span class="toggle-pill" aria-hidden="true">
+                <span class="toggle-slot toggle-slot-left"></span>
+                <span class="toggle-dot"></span>
+                <span class="toggle-slot toggle-slot-right"></span>
+                <span class="toggle-knob" id="toggleKnob"></span>
+              </span>
+            </button>
+            <span class="hero-intro-text">ye!</span>
+          </div>
+
+          <!-- Main Display Heading -->
+          <h1 class="hero-title">Your Design Partner</h1>
+
+          <!-- Hero Stage: Left Bio, Center Half-Circle & Memoji, Right Availability -->
+          <div class="hero-stage">
+            <!-- Left Bio Column (Desktop) -->
+            <div class="hero-bio-col">
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <p class="hero-bio">
+                I design websites, apps and brands for startups and growing
+                businesses. I start by getting to know the people who'll use
+                them.
+              </p>
+            </div>
+
+            <!-- Center Visual: Half-Circle Backdrop, Memoji & CTA Group -->
+            <div class="hero-visual-col">
+              <div class="hero-halfcircle-wrapper">
+                <div class="hero-halfcircle" aria-hidden="true"></div>
+                <div class="hero-memoji-container" id="memojiHero">
+                  <img
+                    src="assets/images/memoji_open.png"
+                    alt="Oyekunmi Oyediji smiling Memoji"
+                    class="memoji-img memoji-open"
+                    id="memojiOpen"
+                    width="400"
+                    height="400"
+                  />
+                  <img
+                    src="assets/images/memoji_close.png"
+                    alt=""
+                    class="memoji-img memoji-close"
+                    id="memojiClose"
+                    width="400"
+                    height="400"
+                    aria-hidden="true"
+                  />
+                </div>
+                <!-- Hero CTA Button Group -->
+                <div class="hero-cta-group">
+                  <a
+                    href="#work"
+                    class="btn-explore"
+                    aria-label="Explore Selected Work"
+                  >
+                    <span>Explore</span>
+                    <svg
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M22 16.6L15.5 23L9 16.6M15.5 23V7"
+                        stroke-width="2.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://calendly.com/oyekunmioyediji/30min"
+                    class="btn-book-call"
+                    aria-label="Book a call with Oyekunmi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Book a call
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Availability Column (Desktop) -->
+            <div class="hero-availability-col">
+              <div class="availability-status">
+                <span class="availability-dot" aria-hidden="true"></span>
+                <span class="availability-text"
+                  >Available for new projects</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Selected Work Section -->
+      <section
+        class="selected-work-section"
+        id="work"
+        aria-label="Selected Work"
+      >
+        <div class="container">
+          <!-- Section Header with Background Watermark Label -->
+          <div class="section-header">
+            <span class="section-watermark" aria-hidden="true">PORTFOLIO</span>
+            <h2 class="section-title">/SELECTED WORK</h2>
+          </div>
+
+          <!-- 2-Column Desktop / 1-Column Mobile Projects Grid -->
+          <div class="projects-grid">
+            <!-- Project 01: Lumivox -->
+            <article class="project-card">
+              <div class="project-visual-wrapper project-visual--lumivox">
+                <img
+                  src="assets/images/proj_lumivox.png"
+                  alt="Lumivox web app dashboard interface preview"
+                  class="project-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-info">
+                <div class="project-meta-row">
+                  <span class="project-category">01 / Fintech · Web App</span>
+                  <span class="project-role">Product Design</span>
+                </div>
+                <h3 class="project-name">Lumivox</h3>
+                <p class="project-description">
+                  A digital engagement platform connecting brands and users
+                  through rewards, games and social experiences.
+                </p>
+                <div class="project-stat-row">
+                  <span class="project-stat">50+ responsive screens</span>
+                </div>
+                <a
+                  href="#case-study-lumivox"
+                  class="project-link"
+                  aria-label="Read Lumivox case study"
+                >
+                  <span>Read the case study</span>
+                  <svg
+                    class="project-link-arrow"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M13.5 4.5L4.5 13.5M13.5 12V4.5H6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 02: Learnflow -->
+            <article class="project-card">
+              <div class="project-visual-wrapper project-visual--learnflow">
+                <img
+                  src="assets/images/proj_learnflow.png"
+                  alt="Learnflow mobile application interface preview"
+                  class="project-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-info">
+                <div class="project-meta-row">
+                  <span class="project-category">02 / Edtech · Mobile App</span>
+                  <span class="project-role">Product Design</span>
+                </div>
+                <h3 class="project-name">Learnflow</h3>
+                <p class="project-description">
+                  A learning companion that helps learners organise courses,
+                  build study routines and regain momentum when life gets busy.
+                </p>
+                <div class="project-stat-row">
+                  <span class="project-stat">Capstone Project</span>
+                </div>
+                <a
+                  href="#case-study-learnflow"
+                  class="project-link"
+                  aria-label="Read Learnflow case study"
+                >
+                  <span>Read the case study</span>
+                  <svg
+                    class="project-link-arrow"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M13.5 4.5L4.5 13.5M13.5 12V4.5H6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 03: Elite Shine -->
+            <article class="project-card">
+              <div class="project-visual-wrapper project-visual--eliteshine">
+                <img
+                  src="assets/images/proj_eliteshine.png"
+                  alt="Elite Shine luxury car detailing website preview"
+                  class="project-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-info">
+                <div class="project-meta-row">
+                  <span class="project-category"
+                    >03 / Car Detailing · Web App</span
+                  >
+                  <span class="project-role"
+                    >Brand Identity + Product Design</span
+                  >
+                </div>
+                <h3 class="project-name">Elite Shine</h3>
+                <p class="project-description">
+                  Brand identity and website for a luxury car detailing service,
+                  from logo to booking flow.
+                </p>
+                <div class="project-stat-row">
+                  <span class="project-stat"
+                    >Full brand identity + product design</span
+                  >
+                </div>
+                <a
+                  href="#case-study-eliteshine"
+                  class="project-link"
+                  aria-label="Read Elite Shine case study"
+                >
+                  <span>Read the case study</span>
+                  <svg
+                    class="project-link-arrow"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M13.5 4.5L4.5 13.5M13.5 12V4.5H6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 04: Aura Cayane -->
+            <article class="project-card">
+              <div class="project-visual-wrapper project-visual--auracayane">
+                <img
+                  src="assets/images/proj_auracayane.png"
+                  alt="Aura Cayane luxury perfume store preview"
+                  class="project-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-info">
+                <div class="project-meta-row">
+                  <span class="project-category"
+                    >04 / Perfume Store · Ecommerce · WordPress</span
+                  >
+                  <span class="project-role">Web Design</span>
+                </div>
+                <h3 class="project-name">Aura Cayane</h3>
+                <p class="project-description">
+                  Luxury perfume store on WordPress and WooCommerce, with
+                  Paystack and crypto checkout
+                </p>
+                <div class="project-stat-row">
+                  <span class="project-stat"
+                    >Full brand identity + product design</span
+                  >
+                </div>
+                <a
+                  href="#case-study-auracayane"
+                  class="project-link"
+                  aria-label="Read Aura Cayane case study"
+                >
+                  <span>Read the case study</span>
+                  <svg
+                    class="project-link-arrow"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M13.5 4.5L4.5 13.5M13.5 12V4.5H6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Services Section -->
+      <section class="services-section" id="services" aria-label="Services">
+        <div class="container">
+          <div class="services-card">
+            <!-- Services Section Header -->
+            <div class="services-header">
+              <span class="services-watermark" aria-hidden="true"
+                >SERVICES</span
+              >
+              <h2 class="services-title">/SERVICES</h2>
+            </div>
+
+            <!-- Services Carousel Container -->
+            <div class="services-carousel-wrapper">
+              <div
+                class="services-slides-track"
+                id="servicesTrack"
+                role="region"
+                aria-label="Services Carousel"
+              >
+                <!-- Slide 1: UI/UX Design -->
+                <div
+                  class="service-slide is-active"
+                  id="service-slide-0"
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label="1 of 4: UI/UX Design"
+                >
+                  <div class="service-content">
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-category">
+                      Web App &bull; Mobile App &bull; Design System
+                    </p>
+                    <p class="service-description">
+                      For startups and teams with an idea, or a product that
+                      users find confusing. I go from research and flows to a
+                      clickable prototype, then hand developers a clean file to
+                      can from.
+                    </p>
+                  </div>
+                  <div class="service-visual">
+                    <img
+                      src="assets/images/service_uiux.png"
+                      alt="UI/UX design interface preview"
+                      class="service-img"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+
+                <!-- Slide 2: Brand Identity -->
+                <div
+                  class="service-slide"
+                  id="service-slide-1"
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label="2 of 4: Brand Identity"
+                >
+                  <div class="service-content">
+                    <h3 class="service-title">Brand Identity</h3>
+                    <p class="service-category">
+                      Logo &bull; Guidelines &bull; Print &amp; Packaging
+                    </p>
+                    <p class="service-description">
+                      I design logos and complete brand identities, including
+                      colours, typography and usage guidelines for businesses
+                      that want to look as good as they are.
+                    </p>
+                  </div>
+                  <div class="service-visual">
+                    <img
+                      src="assets/images/service_brand.png"
+                      alt="Brand identity design showcase"
+                      class="service-img"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+
+                <!-- Slide 3: WordPress & E-commerce -->
+                <div
+                  class="service-slide"
+                  id="service-slide-2"
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label="3 of 4: WordPress &amp; E-commerce"
+                >
+                  <div class="service-content">
+                    <h3 class="service-title">WordPress &amp; E-commerce</h3>
+                    <p class="service-category">
+                      Ecommerce &bull; Woocommerce &bull; Payments
+                    </p>
+                    <p class="service-description">
+                      For brands that need online presence or store that works,
+                      I build and revamp websites with product filtering,
+                      reviews, wishlists, discount codes and smooth checkout
+                      through Paystack or crypto payments. You get a store that
+                      is fast, easy to manage and ready to sell.
+                    </p>
+                  </div>
+                  <div class="service-visual">
+                    <img
+                      src="assets/images/service_wordpress.png"
+                      alt="WordPress and e-commerce dashboard preview"
+                      class="service-img"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+
+                <!-- Slide 4: Frontend Development -->
+                <div
+                  class="service-slide"
+                  id="service-slide-3"
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label="4 of 4: Frontend Development"
+                >
+                  <div class="service-content">
+                    <h3 class="service-title">Frontend Development</h3>
+                    <p class="service-category">
+                      Responsive Builds &bull; HTML &amp; CSS &bull; JavaScript
+                    </p>
+                    <p class="service-description">
+                      For teams whose finished product never quite matches the
+                      design, I turn Figma designs into responsive HTML, CSS and
+                      JavaScript, then check the result on real screens so
+                      spacing, fonts and interactions match.
+                    </p>
+                  </div>
+                  <div class="service-visual">
+                    <img
+                      src="assets/images/service_frontend.png"
+                      alt="Frontend code development preview"
+                      class="service-img"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Carousel Pagination Dots (4 Dots) -->
+              <div
+                class="services-pagination"
+                role="tablist"
+                aria-label="Services pagination"
+              >
+                <button
+                  type="button"
+                  class="services-dot is-active"
+                  role="tab"
+                  aria-selected="true"
+                  aria-label="Slide 1: UI/UX Design"
+                  data-slide-index="0"
+                ></button>
+                <button
+                  type="button"
+                  class="services-dot"
+                  role="tab"
+                  aria-selected="false"
+                  aria-label="Slide 2: Brand Identity"
+                  data-slide-index="1"
+                ></button>
+                <button
+                  type="button"
+                  class="services-dot"
+                  role="tab"
+                  aria-selected="false"
+                  aria-label="Slide 3: WordPress &amp; E-commerce"
+                  data-slide-index="2"
+                ></button>
+                <button
+                  type="button"
+                  class="services-dot"
+                  role="tab"
+                  aria-selected="false"
+                  aria-label="Slide 4: Frontend Development"
+                  data-slide-index="3"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Me Section -->
+      <section class="about-section" id="about" aria-label="About Me">
+        <div class="container">
+          <!-- About Section Header -->
+          <div class="about-header">
+            <span class="about-watermark" aria-hidden="true">ABOUT ME</span>
+            <h2 class="about-title">/ABOUT</h2>
+          </div>
+
+          <!-- Main Content Grid: Portrait & Bio -->
+          <div class="about-grid">
+            <!-- Portrait Column -->
+            <div class="about-portrait-wrapper">
+              <img
+                src="assets/images/about_portrait.png"
+                alt="Oyekunmi Oyediji portrait"
+                class="about-portrait-img"
+                loading="lazy"
+              />
+            </div>
+
+            <!-- Bio Column -->
+            <div class="about-bio-col">
+              <h3 class="about-heading">
+                I design for the person on the other side of the screen.
+              </h3>
+
+              <p class="about-body">
+                I start every project by understanding who will use it and what
+                they need to feel, then I design, and build where needed, so
+                what I hand over is something developers can bring to life.
+              </p>
+
+              <p class="about-body">
+                Some people call me Oyèkúnmi, some call me Oyèdìjí, hence O.Oye.
+                I recently earned my Product Design certificate from
+                <button
+                  type="button"
+                  class="cert-trigger-link"
+                  id="certTrigger"
+                  aria-haspopup="dialog"
+                  aria-controls="certModal"
+                  aria-label="View TechCrush Academy certificate"
+                >
+                  TechCrush Academy</button
+                >, which sharpened the process behind the work. Away from the
+                screen, you’ll usually find me listening to music or watching
+                podcast about space and universe.
+              </p>
+
+              <div class="about-tools-block">
+                <span class="about-tools-label">Tools I build with</span>
+                <p class="about-tools-list">
+                  Figma / VS Code / Wordpress / Photoshop
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Statistics Row (4+, 10+, 170+) -->
+          <div class="about-stats-row">
+            <div class="about-stat-item">
+              <span class="about-stat-number">4+</span>
+              <span class="about-stat-label">Years designing</span>
+            </div>
+            <div class="about-stat-item">
+              <span class="about-stat-number">10+</span>
+              <span class="about-stat-label">Projects delivered</span>
+            </div>
+            <div class="about-stat-item">
+              <span class="about-stat-number">170+</span>
+              <span class="about-stat-label">Designed screens</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TechCrush Certificate Modal -->
+      <div
+        class="cert-modal-backdrop"
+        id="certModal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="certModalTitle"
+        aria-hidden="true"
+      >
+        <div class="cert-modal-dialog">
+          <button
+            type="button"
+            class="cert-modal-close"
+            id="certModalClose"
+            aria-label="Close Certificate Modal"
+          >
+            <img
+              src="assets/icons/icon_close.svg"
+              alt=""
+              aria-hidden="true"
+              width="20"
+              height="20"
+            />
+          </button>
+          <div class="cert-modal-content">
+            <h3 id="certModalTitle" class="visually-hidden">
+              TechCrush Academy Product Design Certificate
+            </h3>
+            <img
+              src="assets/images/cert_techcrush.png"
+              alt="TechCrush Academy Product Design Certificate awarded to Oyekunmi Oyediji"
+              class="cert-modal-img"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Experience Section -->
+      <section
+        class="experience-section"
+        id="experience"
+        aria-label="Experience"
+      >
+        <div class="container">
+          <header class="experience-header">
+            <span class="experience-watermark" aria-hidden="true"
+              >EXPERIENCE</span
+            >
+            <h2 class="experience-title">/EXPERIENCE</h2>
+          </header>
+
+          <div class="experience-layout">
+            <p class="experience-introduction">
+              Teams and products I've helped shape along the way
+            </p>
+
+            <div
+              class="experience-history"
+              role="region"
+              aria-label="Experience history"
+              tabindex="0"
+            >
+              <div class="experience-history-content">
+                <div class="experience-timeline" aria-hidden="true">
+                  <span class="timeline-line"></span>
+                  <!-- Each Memoji replaces the timeline dot for its experience card. -->
+                  <span class="timeline-memoji is-active" data-trail-marker>
+                    <img
+                      src="assets/images/memoji_open.png"
+                      alt=""
+                      width="30"
+                      height="30"
+                    />
+                  </span>
+                  <span class="timeline-memoji is-future" data-trail-marker>
+                    <img
+                      src="assets/images/memoji_open.png"
+                      alt=""
+                      width="30"
+                      height="30"
+                    />
+                  </span>
+                  <span class="timeline-memoji is-future" data-trail-marker>
+                    <img
+                      src="assets/images/memoji_open.png"
+                      alt=""
+                      width="30"
+                      height="30"
+                    />
+                  </span>
+                  <span class="timeline-memoji is-future" data-trail-marker>
+                    <img
+                      src="assets/images/memoji_open.png"
+                      alt=""
+                      width="30"
+                      height="30"
+                    />
+                  </span>
+                  <span class="timeline-memoji is-future" data-trail-marker>
+                    <img
+                      src="assets/images/memoji_open.png"
+                      alt=""
+                      width="30"
+                      height="30"
+                    />
+                  </span>
+                  <span class="timeline-memoji is-future" data-trail-marker>
+                    <img
+                      src="assets/images/memoji_open.png"
+                      alt=""
+                      width="30"
+                      height="30"
+                    />
+                  </span>
+                </div>
+
+                <div class="experience-list">
+                  <article class="experience-card">
+                    <p class="experience-meta">Freelance / Remote / Nigeria</p>
+                    <h3 class="experience-company">Lumivox</h3>
+                    <p class="experience-date">
+                      <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                        <rect x="2.5" y="4.5" width="15" height="13" rx="2" />
+                        <path d="M6 2.5V6.5M14 2.5V6.5M2.5 8.5H17.5" />
+                      </svg>
+                      <span>Jul. 2025 - Oct. 2025</span>
+                    </p>
+                    <p class="experience-description">
+                      Sole designer on a digital engagement platform, delivering
+                      end-to-end UI/UX for web application from concept to
+                      launch.
+                    </p>
+                    <ul class="experience-tags" aria-label="Role">
+                      <li>Product Designer</li>
+                    </ul>
+                  </article>
+
+                  <article class="experience-card">
+                    <p class="experience-meta">
+                      Freelance / Remote / Lagos, Nigeria
+                    </p>
+                    <h3 class="experience-company">Aura Cayane</h3>
+                    <p class="experience-date">
+                      <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                        <rect x="2.5" y="4.5" width="15" height="13" rx="2" />
+                        <path d="M6 2.5V6.5M14 2.5V6.5M2.5 8.5H17.5" />
+                      </svg>
+                      <span>May 2025 - Jul. 2025</span>
+                    </p>
+                    <p class="experience-description">
+                      Built a full ecommerce website for luxury perfume brand
+                      using WordPress and WooCommerce.
+                    </p>
+                    <ul class="experience-tags" aria-label="Services">
+                      <li>Wordpress</li>
+                      <li>Web Design</li>
+                      <li>Ecommerce</li>
+                    </ul>
+                  </article>
+
+                  <article class="experience-card">
+                    <p class="experience-meta">
+                      Freelance / Remote / Manchester, UK
+                    </p>
+                    <h3 class="experience-company">Elite Shine</h3>
+                    <p class="experience-date">
+                      <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                        <rect x="2.5" y="4.5" width="15" height="13" rx="2" />
+                        <path d="M6 2.5V6.5M14 2.5V6.5M2.5 8.5H17.5" />
+                      </svg>
+                      <span>Apr. 2025 - Jun. 2025</span>
+                    </p>
+                    <p class="experience-description">
+                      Led complete brand identity and website design for a
+                      luxury car detailing service, from discovery to developer
+                      handoff.
+                    </p>
+                    <ul class="experience-tags" aria-label="Services">
+                      <li>Brand Designer</li>
+                      <li>Product Designer</li>
+                    </ul>
+                  </article>
+
+                  <article class="experience-card">
+                    <p class="experience-meta">Contract / Remote / USA</p>
+                    <h3 class="experience-company">MyNursera</h3>
+                    <p class="experience-date">
+                      <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                        <rect x="2.5" y="4.5" width="15" height="13" rx="2" />
+                        <path d="M6 2.5V6.5M14 2.5V6.5M2.5 8.5H17.5" />
+                      </svg>
+                      <span>Nov. 2024 - Jan. 2026</span>
+                    </p>
+                    <p class="experience-description">
+                      Researched prospects and ran outbound email campaigns to
+                      build a consistent lead generation pipeline.
+                    </p>
+                    <ul class="experience-tags" aria-label="Services">
+                      <li>Marketing</li>
+                      <li>Lead Generation Assistant</li>
+                    </ul>
+                  </article>
+
+                  <article class="experience-card">
+                    <p class="experience-meta">Contract / Remote / Nigeria</p>
+                    <h3 class="experience-company">Zenithx</h3>
+                    <p class="experience-date">
+                      <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                        <rect x="2.5" y="4.5" width="15" height="13" rx="2" />
+                        <path d="M6 2.5V6.5M14 2.5V6.5M2.5 8.5H17.5" />
+                      </svg>
+                      <span>Sep. 2024 - Dec. 2024</span>
+                    </p>
+                    <p class="experience-description">
+                      Designed 40+ responsive screens in Figma for an affiliate
+                      marketing platform, including a marketplace feature that
+                      lets small businesses advertise to platform users.
+                    </p>
+                    <ul class="experience-tags" aria-label="Role">
+                      <li>Product Designer</li>
+                    </ul>
+                  </article>
+
+                  <article class="experience-card">
+                    <p class="experience-meta">Contract / Remote / Nigeria</p>
+                    <h3 class="experience-company">Pulseprofit</h3>
+                    <p class="experience-date">
+                      <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                        <rect x="2.5" y="4.5" width="15" height="13" rx="2" />
+                        <path d="M6 2.5V6.5M14 2.5V6.5M2.5 8.5H17.5" />
+                      </svg>
+                      <span>Nov. 2023 - Mar. 2024</span>
+                    </p>
+                    <p class="experience-description">
+                      Sole designer on a fintech platform, creating 60+ screens
+                      across desktop and mobile in Figma.
+                    </p>
+                    <ul class="experience-tags" aria-label="Role">
+                      <li>Product Designer</li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Contact Section -->
+    <section
+      class="contact-section"
+      id="contact"
+      aria-labelledby="contact-title"
+    >
+      <div class="container contact-container">
+        <h2 class="contact-title" id="contact-title">
+          Have a project in mind?
+        </h2>
+        <p class="contact-supporting-text">
+          Tell me about it. I’m open to full time roles, contracts and freelance
+          projects.
+        </p>
+
+        <div class="contact-actions">
+          <!-- Replace the empty mailto target with O.Oye's email address when provided. -->
+          <a class="contact-email-button" href="mailto:">
+            <span>Send me an email</span>
+            <svg viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path
+                d="M4.5 13.5L13.5 4.5M6 4.5H13.5V12"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <!-- Replace # with the booking URL when provided. -->
+          <a
+            class="contact-call-link"
+            href="https://calendly.com/oyekunmioyediji/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Book a call</span>
+            <svg viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path
+                d="M4.5 13.5L13.5 4.5M6 4.5H13.5V12"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Replace placeholder # destinations with O.Oye's social profile URLs. -->
+        <nav class="contact-social-links" aria-label="Social links">
+          <a class="contact-social-link" href="https://www.behance.net/oyekunmioyediji" target="_blank" rel="noopener noreferrer" aria-label="Behance profile">
+            <img
+              src="assets/icons/icon_behance.svg"
+              alt=""
+              width="38"
+              height="38"
+            />
+          </a>
+          <a class="contact-social-link" href="https://www.linkedin.com/in/oyekunmi-oyediji" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <img
+              src="assets/icons/icon_linkedin.svg"
+              alt=""
+              width="38"
+              height="38"
+            />
+          </a>
+          <a class="contact-social-link" href="https://x.com/o_oyekunmi" target="_blank" rel="noopener noreferrer" aria-label="X profile">
+            <img
+              src="assets/icons/icon_twitter.svg"
+              alt=""
+              width="38"
+              height="38"
+            />
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Static Footer; the Memoji badge has no floating animation. -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <p class="footer-copyright">© 2026 O.Oye Designs</p>
+        <span class="footer-memoji" aria-hidden="true">
+          <img
+            src="assets/images/memoji_open.png"
+            alt=""
+            width="40"
+            height="40"
+          />
+        </span>
+        <a class="footer-back-to-top" href="#top">
+          <span>Back to top</span>
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path
+              d="M10 16V4M5 9L10 4L15 9"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Core JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
