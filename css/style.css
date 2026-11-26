@@ -412,6 +412,24 @@ nav,
   transform: translateX(4px);
 }
 
+.mobile-nav-link.mobile-nav-cta {
+  gap: 12px;
+  width: fit-content;
+  padding: 12px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background-color: var(--nav-bg);
+  font-family: var(--font-body);
+  font-size: 20px;
+  letter-spacing: normal;
+}
+
+.mobile-nav-cta svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
 .mobile-nav-bullet {
   width: 6px;
   height: 6px;
@@ -594,6 +612,7 @@ nav,
   padding: 0 4px;
   box-sizing: border-box;
   transition: border-color 0.4s ease;
+  animation: toggleAttentionPulse 7s ease-in-out infinite;
 }
 
 /* Slots for the two "O"s */
@@ -669,6 +688,19 @@ nav,
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes toggleAttentionPulse {
+  0%,
+  100% {
+    scale: 1;
+  }
+  3% {
+    scale: 1.035;
+  }
+  7% {
+    scale: 1;
   }
 }
 
@@ -1756,7 +1788,7 @@ nav,
   }
 
   .wordmark {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .mobile-menu-btn {
@@ -1765,8 +1797,9 @@ nav,
   }
 
   .hero-section {
-    min-height: calc(100vh - 76px);
-    min-height: calc(100svh - 76px);
+    min-height: calc(100vh - 86px);
+    min-height: calc(100svh - 86px);
+    min-height: calc(100dvh - 86px);
     padding-top: 10px;
     padding-bottom: 0;
   }
@@ -1879,6 +1912,7 @@ nav,
 
   .hero-container {
     padding-top: 11.5vh;
+    padding-top: 11.5dvh;
   }
 
   .hero-halfcircle-wrapper {
@@ -1968,8 +2002,8 @@ nav,
   }
 
   .project-description {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 22px;
     letter-spacing: normal;
     margin-right: 0;
     margin-bottom: 20px;
@@ -2047,7 +2081,7 @@ nav,
   }
 
   .service-description {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 22px;
     letter-spacing: normal;
     max-width: 100%;
