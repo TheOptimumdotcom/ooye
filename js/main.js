@@ -95,6 +95,7 @@ function initThemeToggle() {
 function initMemojiBlink() {
   const openImg = document.getElementById("memojiOpen");
   const closedImg = document.getElementById("memojiClose");
+  const togglePill = document.querySelector(".toggle-pill");
 
   if (!openImg || !closedImg) return;
 
@@ -109,7 +110,24 @@ function initMemojiBlink() {
     closedImg.decode().catch(() => {});
   }
 
+  if (togglePill) {
+    togglePill.addEventListener("animationend", (event) => {
+      if (
+        event.target === togglePill &&
+        event.animationName === "toggleBlinkPulse"
+      ) {
+        togglePill.classList.remove("is-blinking");
+      }
+    });
+  }
+
   function blink() {
+    if (togglePill) {
+      togglePill.classList.remove("is-blinking");
+      void togglePill.offsetWidth;
+      togglePill.classList.add("is-blinking");
+    }
+
     closedImg.style.transition = "opacity 280ms ease-in-out";
     closedImg.style.opacity = "1";
 
@@ -670,7 +688,7 @@ function initSectionReveals() {
 
   const revealTargets = Array.from(
     document.querySelectorAll(
-      "main > section:not(.hero-section), .project-card, .service-slide, .experience-card, .about-grid, .contact-container",
+      "main > section:not(.hero-section), .project-card, .service-slide, .experience-card, .note-card, .about-grid, .contact-container",
     ),
   );
 
@@ -684,9 +702,20 @@ function initSectionReveals() {
   }
 
   revealTargets.forEach((target, index) => {
-    if (target.matches(".project-card, .service-slide, .experience-card")) {
+    if (
+      target.matches(
+        ".project-card, .service-slide, .experience-card, .note-card",
+      )
+    ) {
       target.classList.add("card-reveal");
-      target.style.transitionDelay = `${Math.min(index % 4, 3) * 45}ms`;
+      if (target.matches(".note-card")) {
+        const cardIndex = Array.from(target.parentElement.children).indexOf(
+          target,
+        );
+        target.style.transitionDelay = `${cardIndex * 50}ms`;
+      } else {
+        target.style.transitionDelay = `${Math.min(index % 4, 3) * 45}ms`;
+      }
     } else {
       target.classList.add("section-reveal");
     }
